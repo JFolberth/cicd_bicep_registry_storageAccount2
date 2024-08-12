@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "features": {
+        "git": "latest",
+        "azure-cli": "latest",
+        "powershell": "latest"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-bicep",
+                "ms-azuretools.vscode-docker",
+                "yzhang.markdown-all-in-one",
+                "oderwat.indent-rainbow",
+                "github.copilot"
+            ]
+        }
+    }
+
+
+}
