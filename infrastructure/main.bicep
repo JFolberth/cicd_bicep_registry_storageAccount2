@@ -4,6 +4,8 @@ param location string
 param baseName string = 'sa2jwf'
 @description('Three letter environment abreviation to denote environment that will appear in all resource names') 
 param environmentName string = 'dev'
+@description('Optional. The diagnostic settings of the service.')
+param diagnosticSettings diagnosticSettingType
 @description('Key Value Pair for tags.')
 param tags object = {}
 targetScope = 'subscription'
@@ -28,6 +30,7 @@ module storageAccount 'br:acrbicepregistrydeveus.azurecr.io/bicep/modules/storag
   params: {
     location: location
     storageAccountName: shortsuffix
+    diagnosticSettings: diagnosticSettings
   }
 
 }
