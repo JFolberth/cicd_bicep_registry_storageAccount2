@@ -10,6 +10,6 @@ param diagnosticSettings = [
         enabled: true
       } 
     ]
-    workspaceResourceId:'7d85c4c3-a25b-41af-8ae1-c07fa439294d'
+    workspaceResourceId:'/subscriptions/35ce8cef-94f9-4dba-9c61-a09396fec7cf/resourceGroups/rg-logging-dev-eus/providers/Microsoft.OperationalInsights/workspaces/la-logging-dev-eus'
   }
 ]
